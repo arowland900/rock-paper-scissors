@@ -2,18 +2,22 @@
 
 
 /*----- app's state (variables) -----*/
-var board, turn, winner
+let scores, results, winner;
 
 /*----- cached element references -----*/
-
+const scoreEls = {
+    p: document.querySelector(''),
+    p: document.querySelector(''),
+    p: document.querySelector('')
+}
 
 /*----- event listeners -----*/
-
+document.getElementById('go-btn').addEventListener('click', handleGo)
 
 
 /*----- functions -----*/
 
-initialize();
+init();
 
 function init() {
     scores = {
@@ -26,5 +30,16 @@ function init() {
         c: 'r'
     };
     winner = null;
+    render();
 }
 
+function render() {
+    // transfer all state (variables) to the DOM
+    // display scores
+
+    // display results
+}
+
+function handleGo() {
+
+}
